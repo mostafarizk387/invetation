@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Primary Meta Tags -->
+  <title id="meta-title">دعوة فرح | 09 • 10 • 2026</title>
+  <meta name="title" content="دعوة فرح | 09 • 10 • 2026">
+  <meta name="description" content="يسعدنا ويشرفنا دعوتكم لحضور حفل زفافنا في 09 أكتوبر 2026. وجودكم يكمل فرحتنا.">
+  <meta name="theme-color" content="#12100e">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="دعوة فرح | 09 • 10 • 2026">
+  <meta property="og:description" content="يسعدنا ويشرفنا دعوتكم لحضور حفل زفافنا في 09 أكتوبر 2026. وجودكم يكمل فرحتنا.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="دعوة فرح | 09 • 10 • 2026">
+  <meta property="twitter:description" content="يسعدنا ويشرفنا دعوتكم لحضور حفل زفافنا في 09 أكتوبر 2026.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22><text y=%2222%22 font-size=%2220%22>💍</text></svg>">
+
+  <!-- Google Fonts: Amiri & Playfair Display & Alex Brush -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Audio Element -->
+  <audio id="bg-audio" preload="none" loop></audio>
+
+  <!-- Floating Golden Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Floating Audio & Floating Navigation Controllers -->
+  <aside class="floating-controls" aria-label="أدوات التحكم">
+    <button id="music-toggle" class="control-btn" aria-label="تشغيل الموسيقى" title="تشغيل / إيقاف الموسيقى">
+      <svg class="icon-music-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <path d="M9 18V5l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+        <line x1="1" y1="1" x2="23" y2="23"></line>
+      </svg>
+      <svg class="icon-music-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <path d="M9 18V5l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+      </svg>
+    </button>
+    <button id="nav-toggle" class="control-btn" aria-label="فتح القائمة" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </aside>
+
+  <!-- Floating Navigation Drawer / Modal -->
+  <nav id="site-nav" class="floating-nav" aria-label="روابط الموقع السريعة">
+    <div class="nav-content">
+      <div class="nav-header">
+        <span class="nav-brand">دعوة زفاف</span>
+        <button id="nav-close" class="nav-close-btn" aria-label="إغلاق القائمة">&times;</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link">الرئيسية</a></li>
+        <li><a href="#couple" class="nav-link">العروسان</a></li>
+        <li><a href="#countdown" class="nav-link">العد التنازلي</a></li>
+        <li><a href="#story" class="nav-link">قصتنا</a></li>
+        <li><a href="#details" class="nav-link">التفاصيل</a></li>
+        <li><a href="#location" class="nav-link">الموقع</a></li>
+        <li><a href="#gallery" class="nav-link">الصور</a></li>
+        <li><a href="#rsvp" class="nav-link">تأكيد الحضور</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= PAGE 1: CINEMATIC OPENING SCREEN ================= -->
+  <section id="opening-curtain" class="opening-screen" aria-label="شاشة الافتتاح">
+    <div class="opening-inner">
+      <div class="ring-animation-box" aria-hidden="true">
+        <div class="ring-glow"></div>
+        <svg class="wedding-rings-svg" viewBox="0 0 200 120">
+          <ellipse cx="75" cy="65" rx="42" ry="28" class="gold-ring ring-left" />
+          <ellipse cx="125" cy="65" rx="42" ry="28" class="gold-ring ring-right" />
+          <path d="M125 32 L131 22 L141 24 L133 32 Z" class="diamond-sparkle" />
+        </svg>
+      </div>
+
+      <div class="opening-typography">
+        <span class="arabic-bismillah">بسم الله الرحمن الرحيم</span>
+        <h1 class="reveal-title">دعوة فرح</h1>
+        <div class="floral-divider">
+          <span class="line"></span>
+          <span class="ornament">❦</span>
+          <span class="line"></span>
+        </div>
+        <p class="opening-date">09 • 10 • 2026</p>
+      </div>
+
+      <button id="enter-btn" class="gold-btn open-invitation-btn">
+        <span class="btn-text">اكتشف الدعوة</span>
+        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 2: WEDDING ANNOUNCEMENT HERO ================= -->
+  <main id="main-content">
+    <header id="hero" class="hero-section">
+      <div class="container hero-container reveal-element">
+        <div class="arch-floral-frame">
+          <div class="sub-greeting">بكل حب وسعادة</div>
+          <h2 class="main-invitation-line">ندعوكم لمشاركتنا أجمل لحظات العمر</h2>
+          <div class="date-badge">
+            <span class="badge-text">09 • 10 • 2026</span>
+          </div>
+
+          <div class="hero-avatar-pair">
+            <div class="avatar-card groom-avatar">
+              <div class="avatar-icon-ring">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <span class="avatar-role">العريس</span>
+              <span class="avatar-name config-groom-name">محمد</span>
+            </div>
+            <div class="and-symbol">&amp;</div>
+            <div class="avatar-card bride-avatar">
+              <div class="avatar-icon-ring">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <path d="M12 2a5 5 0 0 1 5 5c0 2.5-2 4.5-5 7-3-2.5-5-4.5-5-7a5 5 0 0 1 5-5z"></path>
+                  <path d="M12 14v8"></path>
+                  <path d="M8 18h8"></path>
+                </svg>
+              </div>
+              <span class="avatar-role">العروسة</span>
+              <span class="avatar-name config-bride-name">فاطمة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= PAGE 3: THE COUPLE ================= -->
+    <section id="couple" class="couple-section section-padding">
+      <div class="container">
+        <div class="section-title-wrap reveal-element">
+          <span class="section-kicker">معاً إلى الأبد</span>
+          <h2 class="section-heading">العروسان</h2>
+          <div class="floral-divider"><span class="line"></span><span class="ornament">✤</span><span class="line"></span></div>
+        </div>
+
+        <div class="couple-grid">
+          <!-- Groom Card -->
+          <article class="couple-card groom reveal-element">
+            <div class="portrait-frame">
+              <img id="groom-img" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" alt="العريس" loading="lazy" class="portrait-photo">
+              <div class="portrait-overlay"></div>
+            </div>
+            <div class="couple-info">
+              <h3 class="couple-name config-groom-name">محمد</h3>
+              <p class="couple-desc">"أنتِ رحلتي الهادئة وأمان قلبي وسندي في هذه الحياة"</p>
+            </div>
+          </article>
+
+          <!-- Romantic Emblem -->
+          <div class="couple-connector reveal-element" aria-hidden="true">
+            <div class="connector-circle">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Bride Card -->
+          <article class="couple-card bride reveal-element">
+            <div class="portrait-frame">
+              <img id="bride-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="العروس" loading="lazy" class="portrait-photo">
+              <div class="portrait-overlay"></div>
+            </div>
+            <div class="couple-info">
+              <h3 class="couple-name config-bride-name">فاطمة</h3>
+              <p class="couple-desc">"اخترتك لتكون شريكاً لأيامي وحبيبي الذي تبتسم معه روحي"</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGE 4: COUNTDOWN ================= -->
+    <section id="countdown" class="countdown-section section-padding">
+      <div class="countdown-backdrop"></div>
+      <div class="container countdown-container reveal-element">
+        <span class="section-kicker kicker-gold">لحظات تفصلنا عن اللقاء</span>
+        <h2 class="section-heading heading-light">العد التنازلي لليوم المنتظر</h2>
+        
+        <div id="countdown-clock" class="countdown-grid">
+          <div class="time-block">
+            <span id="days" class="time-number">00</span>
+            <span class="time-label">يوم</span>
+          </div>
+          <div class="time-sep">:</div>
+          <div class="time-block">
+            <span id="hours" class="time-number">00</span>
+            <span class="time-label">ساعة</span>
+          </div>
+          <div class="time-sep">:</div>
+          <div class="time-block">
+            <span id="minutes" class="time-number">00</span>
+            <span class="time-label">دقيقة</span>
+          </div>
+          <div class="time-sep">:</div>
+          <div class="time-block">
+            <span id="seconds" class="time-number">00</span>
+            <span class="time-label">ثانية</span>
+          </div>
+        </div>
+
+        <div id="countdown-celebration" class="countdown-finished hidden">
+          اليوم هو يومنا المنتظر ❤️
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGE 5: OUR STORY ================= -->
+    <section id="story" class="story-section section-padding">
+      <div class="container">
+        <div class="section-title-wrap reveal-element">
+          <span class="section-kicker">حكايتنا سوياً</span>
+          <h2 class="section-heading">قصة حبنا</h2>
+          <div class="floral-divider"><span class="line"></span><span class="ornament">❦</span><span class="line"></span></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-spine"></div>
+
+          <!-- Moment 1 -->
+          <div class="timeline-item reveal-element">
+            <div class="timeline-badge">01</div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">البداية</span>
+              <h3 class="timeline-title">أول همسة ونظرة</h3>
+              <p>حين التقت خطانا للمرة الأولى، كان حديثاً هادئاً كشف لنا أن الأقدار تخبئ لنا أعظم فصول العمر سوياً.</p>
+            </div>
+          </div>
+
+          <!-- Moment 2 -->
+          <div class="timeline-item reveal-element">
+            <div class="timeline-badge">02</div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">الخطوبة</span>
+              <h3 class="timeline-title">وعد بالبقاء والوفاء</h3>
+              <p>يوم قطعنا عهداً بحضور العائلة الكريمة، أن نكمل الدرب يداً بيد في كل خطوة مقبلة من حياتنا.</p>
+            </div>
+          </div>
+
+          <!-- Moment 3 -->
+          <div class="timeline-item reveal-element">
+            <div class="timeline-badge">03</div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">أجمل الذكريات</span>
+              <h3 class="timeline-title">خطوات بناء حلمنا</h3>
+              <p>أيام من التحضير والضحكات وبناء تفاصيل بيتنا الصغير بحب لا ينضب واهتمام بأدق الأماني.</p>
+            </div>
+          </div>
+
+          <!-- Moment 4 -->
+          <div class="timeline-item reveal-element">
+            <div class="timeline-badge">04</div>
+            <div class="timeline-content glass-card active-moment">
+              <span class="timeline-date">اليوم المنتظر</span>
+              <h3 class="timeline-title">09 أكتوبر 2026</h3>
+              <p>الليلة التي تتوج حكايتنا أمام أحبائنا، لنبدأ معاً أجمل أيام العمر تحت سقف واحد.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGE 6: WEDDING DETAILS ================= -->
+    <section id="details" class="details-section section-padding">
+      <div class="container">
+        <div class="section-title-wrap reveal-element">
+          <span class="section-kicker">معلومات الحفل</span>
+          <h2 class="section-heading">تفاصيل المناسبة</h2>
+          <div class="floral-divider"><span class="line"></span><span class="ornament">✤</span><span class="line"></span></div>
+        </div>
+
+        <div class="details-cards-grid">
+          <!-- Date Card -->
+          <div class="detail-card glass-card reveal-element">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="card-title">التاريخ</h3>
+            <p class="card-info">الجمعة، 09 أكتوبر 2026</p>
+            <span class="card-sub">09 • 10 • 2026</span>
+          </div>
+
+          <!-- Time Card -->
+          <div class="detail-card glass-card reveal-element">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="card-title">الوقت</h3>
+            <p class="card-info config-time">السابعة والنصف مساءً</p>
+            <span class="card-sub">تبدأ مراسم الاستقبال 07:30 م</span>
+          </div>
+
+          <!-- Venue Card -->
+          <div class="detail-card glass-card reveal-element">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="card-title">المكان</h3>
+            <p class="card-info config-venue-name">قصر النرجس للأفراح والمناسبات</p>
+            <span class="card-sub config-venue-city">القاعة الكبرى الفاخرة</span>
+          </div>
+
+          <!-- Dress Code Card -->
+          <div class="detail-card glass-card reveal-element">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">الزي المطلوب</h3>
+            <p class="card-info config-dress-code">ملابس رسمية أنيقة (Formal Chic)</p>
+            <span class="card-sub">ألوان فاتحة وأناقة تليق بكم</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGE 7: EVENT LOCATION ================= -->
+    <section id="location" class="location-section section-padding">
+      <div class="container">
+        <div class="section-title-wrap reveal-element">
+          <span class="section-kicker">كيف تصل إلينا</span>
+          <h2 class="section-heading">موقع الحفل</h2>
+          <div class="floral-divider"><span class="line"></span><span class="ornament">❦</span><span class="line"></span></div>
+        </div>
+
+        <div class="location-box glass-card reveal-element">
+          <div class="map-artistic-frame">
+            <div class="map-grid-pattern"></div>
+            <div class="pin-marker">
+              <div class="pin-pulse"></div>
+              <svg class="pin-svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="location-info-bar">
+            <h3 class="venue-main-title config-venue-name">قصر النرجس للأفراح</h3>
+            <p class="venue-address-text config-venue-address">طريق الملك فهد، حي المروج، الرياض</p>
+            <a id="maps-btn" href="#" target="_blank" rel="noopener noreferrer" class="gold-btn location-link-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              <span>فتح الموقع على خرائط Google</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGE 8: PHOTO GALLERY ================= -->
+    <section id="gallery" class="gallery-section section-padding">
+      <div class="container">
+        <div class="section-title-wrap reveal-element">
+          <span class="section-kicker">ذكريات لا تُنسى</span>
+          <h2 class="section-heading">أجمل اللقطات</h2>
+          <div class="floral-divider"><span class="line"></span><span class="ornament">✤</span><span class="line"></span></div>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal-element" data-index="0">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" alt="لحظات سعيدة 1" loading="lazy">
+            <div class="item-hover-gold"><span class="zoom-icon">✦</span></div>
+          </figure>
+          <figure class="gallery-item reveal-element" data-index="1">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="لحظات سعيدة 2" loading="lazy">
+            <div class="item-hover-gold"><span class="zoom-icon">✦</span></div>
+          </figure>
+          <figure class="gallery-item reveal-element" data-index="2">
+            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=800&q=80" alt="لحظات سعيدة 3" loading="lazy">
+            <div class="item-hover-gold"><span class="zoom-icon">✦</span></div>
+          </figure>
+          <figure class="gallery-item reveal-element" data-index="3">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80" alt="لحظات سعيدة 4" loading="lazy">
+            <div class="item-hover-gold"><span class="zoom-icon">✦</span></div>
+          </figure>
+          <figure class="gallery-item reveal-element" data-index="4">
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80" alt="لحظات سعيدة 5" loading="lazy">
+            <div class="item-hover-gold"><span class="zoom-icon">✦</span></div>
+          </figure>
+          <figure class="gallery-item reveal-element" data-index="5">
+            <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=800&q=80" alt="لحظات سعيدة 6" loading="lazy">
+            <div class="item-hover-gold"><span class="zoom-icon">✦</span></div>
+          </figure>
+          <figure class="gallery-item reveal-element" data-index="6">
+            <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=800&q=80" alt="لحظات سعيدة 7" loading="lazy">
+            <div class="item-hover-gold"><span class="zoom-icon">✦</span></div>
+          </figure>
+          <figure class="gallery-item reveal-element" data-index="7">
+            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80" alt="لحظات سعيدة 8" loading="lazy">
+            <div class="item-hover-gold"><span class="zoom-icon">✦</span></div>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Fullscreen Lightbox Modal -->
+      <div id="lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <button id="lightbox-close" class="lightbox-close" aria-label="إغلاق الصورة">&times;</button>
+        <button id="lightbox-prev" class="lightbox-nav-btn prev" aria-label="الصورة السابقة">&#10095;</button>
+        <button id="lightbox-next" class="lightbox-nav-btn next" aria-label="الصورة التالية">&#10094;</button>
+        <div class="lightbox-image-wrap">
+          <img id="lightbox-current-img" src="" alt="عرض مكبر للصورة">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGE 9: FINAL INVITATION / RSVP ================= -->
+    <section id="rsvp" class="rsvp-section section-padding">
+      <div class="container rsvp-container reveal-element">
+        <div class="rsvp-ornament-box glass-card">
+          <div class="floral-wreath-icon">❦</div>
+          <h2 class="rsvp-quote">"وجودكم هو أجمل ما يكتمل به فرحنا"</h2>
+          <p class="rsvp-lead">بانتظاركم في يومنا الكبير لنصنع ذكريات لا تغيب</p>
+          <div class="date-stamp">09 • 10 • 2026</div>
+
+          <div class="rsvp-actions">
+            <a id="whatsapp-rsvp-btn" href="#" target="_blank" rel="noopener noreferrer" class="gold-btn rsvp-whatsapp-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm5.79 14.04c-.24.67-1.39 1.28-1.92 1.34-.51.06-1.16.08-3.76-.99-2.73-1.12-4.49-3.9-4.63-4.08-.14-.18-1.11-1.48-1.11-2.82s.7-2 1-2.27c.24-.22.52-.27.7-.27.18 0 .36 0 .52.01.17.01.4.07.61.52.22.48.74 1.82.81 1.96.07.14.12.31.02.5-.09.18-.14.3-.29.47-.14.17-.3.38-.43.51-.14.15-.29.31-.13.58.17.28.74 1.22 1.58 1.98 1.09.98 2.01 1.28 2.3 1.42.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1.1.72 1.42.98 1.42.27.14.45.2.52.32.07.11.07.67-.17 1.34z"/>
+              </svg>
+              <span>تأكيد الحضور عبر واتساب</span>
+            </a>
+          </div>
+          <span class="rsvp-hint">يرجى تأكيد الحضور قبل 20 سبتمبر 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-names config-groom-name">محمد</div>
+        <div class="footer-heart">❤</div>
+        <div class="footer-names config-bride-name">فاطمة</div>
+        <p class="footer-copy">09 • 10 • 2026 — حفل زفاف مبارك</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
